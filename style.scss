@@ -234,5 +234,96 @@ body {
         margin-top: 75px;
     }
 }
+.housing-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    text-align: center;
+    .housing-bg {
+        background-image: url(images/housing-bg.png);
+        background-repeat: no-repeat;
+        background-position: 50% 0%;
+        background-size: 85%;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+    .housing-title {
+        @include fonts.h2();
+        line-height: 64px;
+        color: black;
+    }
+    .housing-subtitle {
+        @include fonts.h3();
+        line-height: 40px;
+        color: #ff5500;
+        padding: 40px 0px;
+    }
+    .housing-list {
+        @include fonts.t6();
+        line-height: 36px;
+        text-align: left;
+        width: 50%;
+        margin: 0 auto;
+        span {
+            font-weight: 700;
+        }
+    }
+    .housing-slider {
+        .housing-slider-item {
+            height: 400px;
+            max-width: 620px;
+            margin: 0px 15px;
+            overflow: hidden;
+            > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                // object-position: center;
+            }
+        }
+        .slick-prev:before,
+        .slick-next:before {
+            content: "";
+        }
+        .slick-prev,
+        .slick-next {
+            backdrop-filter: blur(8px);
+            z-index: 100;
+            height: 112px;
+            width: 122px;
+            border-radius: 50%;
+            border: 2px solid white;
+
+            background-repeat: no-repeat;
+        }
+        .slick-prev {
+            left: 300px;
+            background-image: url(images/arrow-left.svg);
+            background-position: 47% 50%;
+        }
+        .slick-next {
+            right: 300px;
+            background-image: url(images/arrow-right.svg);
+            background-position: 53% 50%;
+        }
+        .slick-dots {
+            bottom: -40px;
+        }
+        .slick-dots li.slick-active button {
+            margin-top: -3px;
+        }
+        .slick-dots li button:before {
+            content: "○";
+            font-size: 25px;
+            opacity: 1;
+            line-height: 25px;
+        }
+        .slick-dots li.slick-active button:before {
+            content: "•";
+            font-size: 15px;
+            opacity: 1;
+            line-height: 27px;
+        }
+    }
+}
 
 // ---
