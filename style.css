@@ -146,7 +146,8 @@ body {
 }
 
 .header .header-wrapper {
-  gap: 350px;
+  display: grid;
+  grid-template-columns: 170px 1fr;
   align-items: center;
   padding: 20px 0px;
 }
@@ -155,6 +156,7 @@ body {
   height: 60px;
 }
 .header .header-wrapper .header-menu {
+  justify-self: center;
   gap: 100px;
   font-family: "Lexend", sans-serif;
   font-size: 20px;
