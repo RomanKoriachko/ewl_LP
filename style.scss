@@ -175,5 +175,64 @@ body {
         margin-top: 40px;
     }
 }
+.conditions-section {
+    padding: 20px 0px;
+    text-align: center;
+    .conditions-section-bg {
+        background-image: url(images/conditions-bg.png),
+            url(images/conditions-bg.png);
+        background-repeat: no-repeat;
+        background-position: 15% -30%, 100% 120%;
+    }
+    .conditions-title {
+        @include fonts.h2();
+        color: black;
+        margin-bottom: 60px;
+    }
+    .conditions-row-item {
+        gap: 30px;
+        text-align: left;
+        .conditions-row-item-img {
+            // width: 100%;
+            border-radius: 6px;
+        }
+        .conditions-row-item-text {
+            width: 50%;
+        }
+        .conditions-text-title {
+            @include fonts.h3();
+            font-weight: 700;
+            color: black;
+        }
+        .conditions-text-subtitle-1-wrapper {
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            .conditions-text-subtitle-2 {
+                margin-bottom: 0;
+            }
+        }
+        .conditions-text-subtitle-1 {
+            @include fonts.h3();
+            line-height: 40px;
+            color: black;
+        }
+        .conditions-text-subtitle-2 {
+            @include fonts.t6();
+            color: #ff5500;
+            margin-bottom: 40px;
+        }
+        .conditions-text-list {
+            @include fonts.t6();
+            margin-left: 15px;
+        }
+    }
+    .conditions-row-item-1 {
+        margin-bottom: 87px;
+    }
+    .conditions-btn {
+        margin-top: 75px;
+    }
+}
 
 // ---

@@ -318,3 +318,79 @@ body {
 .about-section .about-btn {
   margin-top: 40px;
 }
+
+.conditions-section {
+  padding: 20px 0px;
+  text-align: center;
+}
+.conditions-section .conditions-section-bg {
+  background-image: url(images/conditions-bg.png), url(images/conditions-bg.png);
+  background-repeat: no-repeat;
+  background-position: 15% -30%, 100% 120%;
+}
+.conditions-section .conditions-title {
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -3px;
+  color: black;
+  margin-bottom: 60px;
+}
+.conditions-section .conditions-row-item {
+  gap: 30px;
+  text-align: left;
+}
+.conditions-section .conditions-row-item .conditions-row-item-img {
+  border-radius: 6px;
+}
+.conditions-section .conditions-row-item .conditions-row-item-text {
+  width: 50%;
+}
+.conditions-section .conditions-row-item .conditions-text-title {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: -3px;
+  font-weight: 700;
+  color: black;
+}
+.conditions-section .conditions-row-item .conditions-text-subtitle-1-wrapper {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.conditions-section .conditions-row-item .conditions-text-subtitle-1-wrapper .conditions-text-subtitle-2 {
+  margin-bottom: 0;
+}
+.conditions-section .conditions-row-item .conditions-text-subtitle-1 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: -3px;
+  line-height: 40px;
+  color: black;
+}
+.conditions-section .conditions-row-item .conditions-text-subtitle-2 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #ff5500;
+  margin-bottom: 40px;
+}
+.conditions-section .conditions-row-item .conditions-text-list {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-left: 15px;
+}
+.conditions-section .conditions-row-item-1 {
+  margin-bottom: 87px;
+}
+.conditions-section .conditions-btn {
+  margin-top: 75px;
+}
