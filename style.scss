@@ -436,7 +436,7 @@ body {
                 background-position: center;
                 background-repeat: no-repeat;
                 z-index: 100;
-                top: 380px;
+                top: 400px;
                 height: 46px;
                 width: 46px;
                 border: 1px solid black;
@@ -456,6 +456,35 @@ body {
                 bottom: -20px;
             }
         }
+    }
+}
+.requirements-section {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    .requirements-wrapper {
+        gap: 70px;
+        .requirements-subtitle {
+            @include fonts.t6();
+            font-size: 24px;
+            color: #ff5500;
+        }
+        .requirements-title {
+            @include fonts.h2();
+            line-height: 77px;
+            color: black;
+            margin: 20px 0px;
+        }
+        .requirements-list {
+            @include fonts.t6();
+            line-height: 32px;
+            margin-left: 20px;
+        }
+        .requirements-img {
+            width: 100%;
+        }
+    }
+    .requirements-btn {
+        margin-top: 40px;
     }
 }
 

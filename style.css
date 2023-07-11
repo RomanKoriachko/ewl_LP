@@ -604,7 +604,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 100;
-  top: 380px;
+  top: 400px;
   height: 46px;
   width: 46px;
   border: 1px solid black;
@@ -622,4 +622,44 @@ body {
 .review-section .review-section-row .review-slider .slick-dots {
   right: 200px;
   bottom: -20px;
+}
+
+.requirements-section {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.requirements-section .requirements-wrapper {
+  gap: 70px;
+}
+.requirements-section .requirements-wrapper .requirements-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 24px;
+  color: #ff5500;
+}
+.requirements-section .requirements-wrapper .requirements-title {
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -3px;
+  line-height: 77px;
+  color: black;
+  margin: 20px 0px;
+}
+.requirements-section .requirements-wrapper .requirements-list {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  line-height: 32px;
+  margin-left: 20px;
+}
+.requirements-section .requirements-wrapper .requirements-img {
+  width: 100%;
+}
+.requirements-section .requirements-btn {
+  margin-top: 40px;
 }
