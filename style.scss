@@ -1,6 +1,15 @@
 @use "reset";
 @use "fonts";
 
+@mixin mainButton() {
+    padding: 20px 78px;
+    background: linear-gradient(103.71deg, #35cbd5 -21.9%, #2bb9c2 86.25%);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    @include fonts.btn();
+}
+
 * {
     box-sizing: border-box;
 }
@@ -17,6 +26,8 @@ body {
 .row {
     display: flex;
 }
+
+// --- Desktop ---
 
 .header {
     .header-wrapper {
@@ -42,7 +53,6 @@ body {
     height: calc(100vh - 100px);
     overflow: hidden;
     .introduce-section-video {
-        // height: 100vh;
         width: 100%;
     }
     .introduce-section-wrapper {
@@ -92,3 +102,78 @@ body {
         }
     }
 }
+.main-btn {
+    @include mainButton();
+}
+.about-section {
+    padding: 60px 0px;
+    text-align: center;
+    .about-section-bg {
+        background-image: url(images/about-bg-1.png), url(images/about-bg-2.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0% -200%, 100% 150%;
+    }
+    .about-section-title {
+        @include fonts.h2();
+        color: black;
+        margin-bottom: 20px;
+    }
+    .about-section-list {
+        @include fonts.t4();
+        text-align: left;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        span {
+            font-weight: 800;
+        }
+    }
+    .about-img {
+        background-image: url(images/about-img.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 4px 4px 40px 0px #b366404d;
+        padding: 87px 160px;
+        text-align: left;
+        .about-img-content {
+            width: 80%;
+        }
+        .about-img-subtitle {
+            @include fonts.t3();
+            font-size: 24px;
+            line-height: 29px;
+            color: #fbba00;
+        }
+        .about-img-title {
+            @include fonts.h2();
+            line-height: 77px;
+            color: black;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        .about-img-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 19px 0px;
+            .about-img-row-item {
+                align-items: center;
+                gap: 15px;
+                @include fonts.t3();
+                .about-img-row-item-check {
+                    height: 28px;
+                    width: 28px;
+                    background-image: url(images/about-check-img.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 80%;
+                }
+            }
+        }
+    }
+    .about-btn {
+        margin-top: 40px;
+    }
+}
+
+// ---

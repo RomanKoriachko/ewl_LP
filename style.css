@@ -1,16 +1,82 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -20,8 +86,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,16 +104,19 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -138,4 +216,105 @@ body {
   line-height: 48px;
   background: linear-gradient(115.1deg, #ffaa00 -17.37%, #ff5500 82.64%);
   border: none;
+}
+
+.main-btn {
+  padding: 20px 78px;
+  background: linear-gradient(103.71deg, #35cbd5 -21.9%, #2bb9c2 86.25%);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.about-section {
+  padding: 60px 0px;
+  text-align: center;
+}
+.about-section .about-section-bg {
+  background-image: url(images/about-bg-1.png), url(images/about-bg-2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0% -200%, 100% 150%;
+}
+.about-section .about-section-title {
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -3px;
+  color: black;
+  margin-bottom: 20px;
+}
+.about-section .about-section-list {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: left;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.about-section .about-section-list span {
+  font-weight: 800;
+}
+.about-section .about-img {
+  background-image: url(images/about-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 4px 4px 40px 0px rgba(179, 102, 64, 0.3019607843);
+  padding: 87px 160px;
+  text-align: left;
+}
+.about-section .about-img .about-img-content {
+  width: 80%;
+}
+.about-section .about-img .about-img-subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fbba00;
+}
+.about-section .about-img .about-img-title {
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -3px;
+  line-height: 77px;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.about-section .about-img .about-img-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 19px 0px;
+}
+.about-section .about-img .about-img-row .about-img-row-item {
+  align-items: center;
+  gap: 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.about-section .about-img .about-img-row .about-img-row-item .about-img-row-item-check {
+  height: 28px;
+  width: 28px;
+  background-image: url(images/about-check-img.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+.about-section .about-btn {
+  margin-top: 40px;
 }
