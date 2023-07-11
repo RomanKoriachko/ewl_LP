@@ -8,3 +8,13 @@ $(document).ready(function () {
         dots: true,
     });
 });
+
+$(document).ready(function () {
+    $(".review-slider").slick({
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        variableWidth: true,
+    });
+});
