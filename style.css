@@ -694,3 +694,93 @@ body {
 .video-section .video-content {
   height: 720px;
 }
+
+.footer {
+  color: white;
+}
+.footer .footer-bg {
+  background-image: url(images/footer-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer .footer-bg .footer-contacts-wrapper {
+  padding: 100px 0px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .footer-bg .footer-contacts-wrapper .footer-contacts-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 108px;
+  font-size: 48px;
+  line-height: 68px;
+  width: 50%;
+}
+.footer .footer-bg .footer-contacts-wrapper .footer-contacts-item {
+  align-items: center;
+  gap: 32px;
+}
+.footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .contact-img {
+  height: 60px;
+  width: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .telegram-img {
+  background-image: url(images/telegram-img.svg);
+}
+.footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .viber-img {
+  background-image: url(images/viber-img.svg);
+}
+.footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .contact-number {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 90px;
+  letter-spacing: -3px;
+  font-weight: 500;
+}
+.footer .footer-links {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 29px;
+  background-color: #292929;
+}
+.footer .footer-links .social-media-wrapper {
+  gap: 45px;
+  align-items: center;
+}
+.footer .footer-links .social-media-wrapper .social-media-text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  font-size: 12px;
+  line-height: 12px;
+}
+.footer .footer-links .social-media-link {
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer .footer-links .facebook-link {
+  background-image: url(images/facebook.svg);
+}
+.footer .footer-links .instagram-link {
+  background-image: url(images/instagram.svg);
+}
+.footer .footer-links .youtube-link {
+  height: 80px;
+  width: 80px;
+  background-image: url(images/youtube.svg);
+}
+.footer .footer-links .copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}

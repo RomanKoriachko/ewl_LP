@@ -511,4 +511,85 @@ body {
     }
 }
 
+.footer {
+    color: white;
+    .footer-bg {
+        background-image: url(images/footer-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .footer-contacts-wrapper {
+            padding: 100px 0px;
+            justify-content: space-evenly;
+            align-items: center;
+            .footer-contacts-title {
+                @include fonts.h1();
+                font-size: 48px;
+                line-height: 68px;
+                width: 50%;
+            }
+            .footer-contacts-item {
+                align-items: center;
+                gap: 32px;
+                .contact-img {
+                    height: 60px;
+                    width: 60px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .telegram-img {
+                    background-image: url(images/telegram-img.svg);
+                }
+                .viber-img {
+                    background-image: url(images/viber-img.svg);
+                }
+                .contact-number {
+                    @include fonts.h3();
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    .footer-links {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        padding: 29px;
+        background-color: #292929;
+        .social-media-wrapper {
+            gap: 45px;
+            align-items: center;
+            .social-media-text {
+                @include fonts.t6();
+                font-size: 12px;
+                line-height: 12px;
+            }
+        }
+        .social-media-link {
+            height: 40px;
+            width: 40px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .facebook-link {
+            background-image: url(images/facebook.svg);
+        }
+        .instagram-link {
+            background-image: url(images/instagram.svg);
+        }
+        .youtube-link {
+            height: 80px;
+            width: 80px;
+            background-image: url(images/youtube.svg);
+        }
+        .copyright {
+            // justify-self: center;
+            font-family: "Poppins", sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+}
+
 // ---
