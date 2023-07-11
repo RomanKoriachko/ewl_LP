@@ -86,3 +86,11 @@ $(document).ready(function () {
 });
 
 // ---
+
+// --- Disable slider buttons ---
+
+const parantElement = document.querySelector(".review-section-row");
+const leftArrow = parantElement.lastChild;
+console.log(leftArrow);
+
+// ---

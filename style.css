@@ -163,6 +163,49 @@ body {
   font-weight: 600;
   line-height: 36px;
 }
+.header .header-wrapper .header-menu > div {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.header .header-wrapper .header-menu > div:hover {
+  color: #fbba00;
+}
+
+.slider .slick-dots {
+  bottom: -40px;
+}
+.slider .slick-dots li.slick-active button {
+  margin-top: -3px;
+}
+.slider .slick-dots li button:before {
+  content: "○";
+  font-size: 25px;
+  opacity: 1;
+  line-height: 25px;
+}
+.slider .slick-dots li.slick-active button:before {
+  content: "•";
+  font-size: 15px;
+  opacity: 1;
+  line-height: 27px;
+}
+
+.main-btn {
+  padding: 20px 78px;
+  background: linear-gradient(103.71deg, #35cbd5 -21.9%, #2bb9c2 86.25%);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s all;
+  font-family: "Roboto Slab", serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.main-btn:hover {
+  box-shadow: 4px 4px 40px 0px #35cbd5;
+}
 
 .introduce-section {
   position: relative;
@@ -217,39 +260,13 @@ body {
   font-size: 32px;
   font-weight: 700;
   line-height: 48px;
+  transition: 0.3s all;
+  cursor: pointer;
   background: linear-gradient(115.1deg, #ffaa00 -17.37%, #ff5500 82.64%);
   border: none;
 }
-
-.main-btn {
-  padding: 20px 78px;
-  background: linear-gradient(103.71deg, #35cbd5 -21.9%, #2bb9c2 86.25%);
-  border: none;
-  border-radius: 6px;
-  color: white;
-  font-family: "Roboto Slab", serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 48px;
-}
-
-.slider .slick-dots {
-  bottom: -40px;
-}
-.slider .slick-dots li.slick-active button {
-  margin-top: -3px;
-}
-.slider .slick-dots li button:before {
-  content: "○";
-  font-size: 25px;
-  opacity: 1;
-  line-height: 25px;
-}
-.slider .slick-dots li.slick-active button:before {
-  content: "•";
-  font-size: 15px;
-  opacity: 1;
-  line-height: 27px;
+.introduce-section .introduce-section-text .introduce-section-btn:hover {
+  box-shadow: 4px 4px 40px 0px #ffaa00;
 }
 
 .about-section {
@@ -484,20 +501,31 @@ body {
           backdrop-filter: blur(8px);
   z-index: 100;
   height: 112px;
-  width: 122px;
+  width: 112px;
   border-radius: 50%;
   border: 2px solid white;
   background-repeat: no-repeat;
+  transition: 0.3s all;
+}
+.housing-section .housing-slider .slick-prev:hover,
+.housing-section .housing-slider .slick-next:hover {
+  border-color: #ff5500;
 }
 .housing-section .housing-slider .slick-prev {
   left: 300px;
   background-image: url(images/arrow-left.svg);
   background-position: 47% 50%;
 }
+.housing-section .housing-slider .slick-prev:hover {
+  background-image: url(images/arrow-left-orange-svg.svg);
+}
 .housing-section .housing-slider .slick-next {
   right: 300px;
   background-image: url(images/arrow-right.svg);
   background-position: 53% 50%;
+}
+.housing-section .housing-slider .slick-next:hover {
+  background-image: url(images/arrow-right-orange-svg.svg);
 }
 
 .review-section {
@@ -609,15 +637,47 @@ body {
   width: 46px;
   border: 1px solid black;
   border-radius: 50%;
+  transition: 0.3s all;
+}
+.review-section .review-section-row .review-slider .slick-prev:hover,
+.review-section .review-section-row .review-slider .slick-next:hover {
+  border-color: #ff5500;
 }
 .review-section .review-section-row .review-slider .slick-prev {
   left: 0px;
+  background-image: url(images/review-arrow-left.svg);
+}
+.review-section .review-section-row .review-slider .slick-prev:hover {
+  background-image: url(images/review-arrow-left-orange.svg);
+}
+.review-section .review-section-row .review-slider .slick-prev.slick-disabled {
+  left: 0px;
+  background-image: url(images/review-arrow-left.svg);
+}
+.review-section .review-section-row .review-slider .slick-prev.slick-disabled:hover {
   background-image: url(images/review-arrow-left.svg);
 }
 .review-section .review-section-row .review-slider .slick-next {
   right: 0;
   left: 70px;
   background-image: url(images/review-arrow-right.svg);
+}
+.review-section .review-section-row .review-slider .slick-next:hover {
+  background-image: url(images/review-arrow-right-orange.svg);
+}
+.review-section .review-section-row .review-slider .slick-next.slick-disabled {
+  right: 0;
+  left: 70px;
+  background-image: url(images/review-arrow-right.svg);
+}
+.review-section .review-section-row .review-slider .slick-next.slick-disabled:hover {
+  background-image: url(images/review-arrow-right.svg);
+}
+.review-section .review-section-row .review-slider .slick-disabled {
+  opacity: 0.3;
+}
+.review-section .review-section-row .review-slider .slick-disabled:hover {
+  border-color: black;
 }
 .review-section .review-section-row .review-slider .slick-dots {
   right: 200px;
