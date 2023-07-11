@@ -487,5 +487,28 @@ body {
         margin-top: 40px;
     }
 }
+.video-section {
+    text-align: center;
+    padding-top: 20px;
+    .video-bg {
+        background-image: url(images/video-bg-1.png), url(images/video-bg-2.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 10% 0%, 100% 150%;
+        padding-bottom: 250px;
+    }
+    .video-title {
+        @include fonts.h2();
+        color: black;
+    }
+    .video-text {
+        @include fonts.t6();
+        line-height: 32px;
+        width: 42%;
+        margin: 40px auto;
+    }
+    .video-content {
+        height: 720px;
+    }
+}
 
 // ---

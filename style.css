@@ -663,3 +663,34 @@ body {
 .requirements-section .requirements-btn {
   margin-top: 40px;
 }
+
+.video-section {
+  text-align: center;
+  padding-top: 20px;
+}
+.video-section .video-bg {
+  background-image: url(images/video-bg-1.png), url(images/video-bg-2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 10% 0%, 100% 150%;
+  padding-bottom: 250px;
+}
+.video-section .video-title {
+  font-family: "Inter", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: -3px;
+  color: black;
+}
+.video-section .video-text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  line-height: 32px;
+  width: 42%;
+  margin: 40px auto;
+}
+.video-section .video-content {
+  height: 720px;
+}
