@@ -232,7 +232,7 @@ body {
   position: absolute;
   top: 30%;
   text-align: left;
-  width: 60%;
+  width: 55%;
 }
 .introduce-section .introduce-section-text .introduce-section-title {
   font-family: "Roboto Slab", serif;
@@ -293,8 +293,7 @@ body {
   font-weight: 500;
   line-height: 29px;
   text-align: left;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 75%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
@@ -379,9 +378,14 @@ body {
 .conditions-section .conditions-row-item {
   gap: 30px;
   text-align: left;
+  align-items: center;
 }
 .conditions-section .conditions-row-item .conditions-row-item-img {
   border-radius: 6px;
+  width: 50%;
+}
+.conditions-section .conditions-row-item .conditions-row-item-img > img {
+  width: 100%;
 }
 .conditions-section .conditions-row-item .conditions-row-item-text {
   width: 50%;
@@ -717,7 +721,10 @@ body {
   line-height: 32px;
   margin-left: 20px;
 }
-.requirements-section .requirements-wrapper .requirements-img {
+.requirements-section .requirements-wrapper .requirements-text {
+  width: 50%;
+}
+.requirements-section .requirements-wrapper .requirements-img > img {
   width: 100%;
 }
 .requirements-section .requirements-btn {
