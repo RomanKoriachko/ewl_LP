@@ -121,6 +121,24 @@ $(document).ready(function () {
         slidesToScroll: 2,
         dots: true,
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
+});
+
+$(document).ready(function () {
+    $(".review-mobile-slider").slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
     });
 });
 
