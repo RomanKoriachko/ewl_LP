@@ -82,6 +82,35 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: true,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: "60px",
+                    variableWidth: true,
+                },
+            },
+        ],
+    });
+});
+
+$(document).ready(function () {
+    $(".housing-mobile-slider").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
     });
 });
 
