@@ -988,6 +988,21 @@ body {
   .about-section .about-img .about-img-row {
     grid-template-columns: 1fr;
   }
+  .conditions-section .conditions-section-bg {
+    background-position: 50% -10%, -30% 75%;
+  }
+  .conditions-section .conditions-row-item .conditions-row-item-img {
+    width: 100%;
+  }
+  .conditions-section .conditions-row-item .conditions-row-item-text {
+    width: 100%;
+  }
+  .conditions-section .conditions-row-item-1 {
+    flex-direction: column;
+  }
+  .conditions-section .conditions-row-item-2 {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 576px) {
   .main-btn {
@@ -1045,11 +1060,34 @@ body {
     font-size: 40px;
     line-height: 48px;
   }
+  .conditions-section .conditions-section-bg {
+    background-position: 0% -2%, 130% 60%;
+    background-size: 80%, 100%;
+  }
+  .conditions-section .conditions-title {
+    font-size: 36px;
+    line-height: 64px;
+    margin-bottom: 16px;
+  }
+  .conditions-section .conditions-row-item .conditions-text-subtitle-1 {
+    margin-bottom: 15px;
+  }
+  .conditions-section .conditions-row-item .conditions-text-subtitle-1-wrapper {
+    flex-direction: column;
+    align-items: start;
+    gap: 0;
+  }
+  .conditions-section .conditions-row-item-1 {
+    margin-bottom: 40px;
+  }
 }
 @media (max-width: 380px) {
   .introduce-section .introduce-section-text-wrapper .introduce-section-text .introduce-section-title {
     font-size: 40px;
     font-weight: 700;
     line-height: 68px;
+  }
+  .conditions-section .conditions-section-bg {
+    background-position: 0% -2%, 130% 55%;
   }
 }
