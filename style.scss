@@ -117,7 +117,6 @@ body {
         height: 100%;
     }
     .introduce-section-text-wrapper {
-        // position: relative;
         height: calc(100vh - 100px);
     }
     .introduce-section-text {
@@ -188,6 +187,7 @@ body {
         box-shadow: 4px 4px 40px 0px #b366404d;
         padding: 87px 160px;
         text-align: left;
+        border-radius: 6px;
         .about-img-content {
             width: 80%;
         }
@@ -207,14 +207,14 @@ body {
         .about-img-row {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 19px 0px;
+            gap: 19px 10px;
             .about-img-row-item {
                 align-items: center;
                 gap: 15px;
                 @include fonts.t3();
                 .about-img-row-item-check {
                     height: 28px;
-                    width: 28px;
+                    min-width: 28px;
                     background-image: url(images/about-check-img.svg);
                     background-repeat: no-repeat;
                     background-position: center;
@@ -692,6 +692,13 @@ body {
             width: 70%;
         }
     }
+    .about-section {
+        padding: 60px 0px;
+        text-align: center;
+        .about-section-bg {
+            background-position: 0% 150%, 100% 150%;
+        }
+    }
 }
 
 // --- Tablet ---
@@ -795,10 +802,31 @@ body {
             width: 90%;
         }
     }
+    .about-section {
+        .about-section-list {
+            width: 95%;
+        }
+        .about-img {
+            padding: 50px 36px;
+            .about-img-content {
+                width: 100%;
+            }
+            .about-img-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
 }
 
 // --- Mobile ---
 @media (max-width: 576px) {
+    .main-btn {
+        padding: 14px 30px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
     .introduce-section {
         .introduce-section-text-wrapper {
             .introduce-section-text {
@@ -828,6 +856,29 @@ body {
                     line-height: 36px;
                     margin: 0 auto;
                 }
+            }
+        }
+    }
+    .about-section {
+        padding: 40px 0px;
+        .about-section-bg {
+            background-position: 30% 200%, 35% 140%;
+        }
+        .about-section-title {
+            font-size: 40px;
+            line-height: 60px;
+        }
+        .about-section-list {
+            width: 90%;
+        }
+        .about-img {
+            .about-img-subtitle {
+                font-size: 16px;
+                line-height: 19px;
+            }
+            .about-img-title {
+                font-size: 40px;
+                line-height: 48px;
             }
         }
     }
