@@ -214,7 +214,8 @@ body {
 .introduce-section {
   position: relative;
   text-align: center;
-  height: calc(100vh - 100px);
+  min-height: 600px;
+  max-height: calc(100vh - 100px);
   overflow: hidden;
 }
 .introduce-section .introduce-section-video {
@@ -229,12 +230,12 @@ body {
   height: 100%;
 }
 .introduce-section .introduce-section-text-wrapper {
-  position: relative;
   height: calc(100vh - 100px);
 }
 .introduce-section .introduce-section-text {
   position: absolute;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   text-align: left;
   width: 55%;
 }
@@ -863,6 +864,13 @@ body {
   .header .header-wrapper .header-menu {
     gap: 50px;
   }
+  .introduce-section .introduce-section-video {
+    height: 100%;
+    width: auto;
+  }
+  .introduce-section .introduce-section-text {
+    width: 70%;
+  }
 }
 @media (max-width: 992px) {
   .header .header-wrapper {
@@ -956,5 +964,45 @@ body {
   }
   .header .header-wrapper .active {
     right: 0px;
+  }
+  .introduce-section .introduce-section-text {
+    width: 90%;
+  }
+}
+@media (max-width: 576px) {
+  .introduce-section .introduce-section-text-wrapper .introduce-section-text {
+    text-align: center;
+    width: 93%;
+    left: 16px;
+  }
+  .introduce-section .introduce-section-text-wrapper .introduce-section-text .introduce-section-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68px;
+  }
+  .introduce-section .introduce-section-text-wrapper .introduce-section-text .introduce-section-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  .introduce-section .introduce-section-text-wrapper .introduce-section-text .introduce-section-subtitle > span {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+  .introduce-section .introduce-section-text-wrapper .introduce-section-text .introduce-section-btn {
+    width: 100%;
+    padding: 14px 36px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 380px) {
+  .introduce-section .introduce-section-text-wrapper .introduce-section-text .introduce-section-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 68px;
   }
 }
