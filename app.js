@@ -9,6 +9,7 @@ const contactsBtn = document.querySelector("#contacts-btn");
 const aboutSection = document.querySelector(".about-section");
 const conditionsSection = document.querySelector(".conditions-section");
 const reviewSection = document.querySelector(".review-section");
+const requirementsSection = document.querySelector(".requirements-section");
 
 const buttons = document.querySelectorAll(".main-btn");
 const introduceBtn = document.querySelector(".introduce-section-btn");
@@ -42,6 +43,15 @@ reviewsbtn.addEventListener("click", () => {
 contactsBtn.addEventListener("click", () => {
     window.scrollTo({
         top: contacts.getBoundingClientRect().top + window.pageYOffset - 100,
+        behavior: "smooth",
+    });
+});
+vacancyBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top:
+            requirementsSection.getBoundingClientRect().top +
+            window.pageYOffset -
+            100,
         behavior: "smooth",
     });
 });
@@ -87,10 +97,17 @@ $(document).ready(function () {
 
 // ---
 
-// --- Disable slider buttons ---
+// --- Burger menu ---
 
-const parantElement = document.querySelector(".review-section-row");
-const leftArrow = parantElement.lastChild;
-console.log(leftArrow);
+const openBurgerBtn = document.querySelector(".burger-menu-btn");
+const closeBurgerBtn = document.querySelector(".burger-menu-close-btn");
+const burgerMenu = document.querySelector(".burger-menu");
+
+openBurgerBtn.addEventListener("click", () => {
+    burgerMenu.classList.add("active");
+});
+closeBurgerBtn.addEventListener("click", () => {
+    burgerMenu.classList.remove("active");
+});
 
 // ---
