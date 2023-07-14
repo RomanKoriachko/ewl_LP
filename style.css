@@ -137,7 +137,7 @@ body {
 
 .container {
   max-width: 1600px;
-  padding: 0px 16px;
+  padding: 0px 50px;
   margin: 0 auto;
 }
 
@@ -178,6 +178,13 @@ body {
   line-height: 48px;
 }
 
+.header {
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  z-index: 999;
+  width: 100%;
+}
 .header .header-wrapper {
   display: grid;
   grid-template-columns: 170px 1fr;
@@ -213,6 +220,7 @@ body {
   min-height: 600px;
   max-height: calc(100vh - 100px);
   overflow: hidden;
+  margin-top: 100px;
 }
 .introduce-section .introduce-section-video {
   width: 100%;
@@ -274,7 +282,7 @@ body {
 .about-section .about-section-bg {
   background-image: url(images/about-bg-1.png), url(images/about-bg-2.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: 0% -200%, 100% 150%;
+  background-position: 0% -50%, 100% 150%;
 }
 .about-section .about-section-title {
   font-family: "Inter", sans-serif;
@@ -363,7 +371,7 @@ body {
 .conditions-section .conditions-section-bg {
   background-image: url(images/conditions-bg.png), url(images/conditions-bg.png);
   background-repeat: no-repeat;
-  background-position: 15% -30%, 100% 120%;
+  background-position: 15% -15%, 100% 120%;
 }
 .conditions-section .conditions-title {
   font-family: "Inter", sans-serif;
@@ -533,7 +541,7 @@ body {
   gap: 48px;
 }
 .review-section .review-section-row .review-text {
-  width: 50%;
+  width: 55%;
 }
 .review-section .review-section-row .review-title {
   font-family: "Inter", sans-serif;
@@ -824,6 +832,7 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
+  justify-items: center;
   padding: 29px;
   background-color: #292929;
 }
@@ -941,6 +950,9 @@ body {
   .about-section .about-section-bg {
     background-position: 0% 150%, 100% 150%;
   }
+  .about-section .about-img .about-img-content {
+    width: 90%;
+  }
   .housing-section .housing-list {
     width: 75%;
   }
@@ -977,12 +989,8 @@ body {
   }
 }
 @media (max-width: 992px) {
-  .header {
-    position: fixed;
-    background-color: white;
-    top: 0px;
-    z-index: 999;
-    width: 100%;
+  .container {
+    padding: 0px 16px;
   }
   .header .header-wrapper {
     grid-template-columns: 100%;
@@ -1073,9 +1081,6 @@ body {
   }
   .header .header-wrapper .active {
     right: 0px;
-  }
-  .introduce-section {
-    margin-top: 100px;
   }
   .introduce-section .introduce-section-text {
     width: 90%;
