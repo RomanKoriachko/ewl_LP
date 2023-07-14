@@ -882,6 +882,10 @@ body {
   font-size: 12px;
   line-height: 12px;
 }
+.footer .footer-links .social-media-links-wrapper {
+  align-items: center;
+  gap: 45px;
+}
 .footer .footer-links .social-media-link {
   height: 40px;
   width: 40px;
@@ -1119,6 +1123,23 @@ body {
     height: 380px;
     width: 100%;
   }
+  .footer .footer-bg .footer-contacts-wrapper {
+    flex-direction: column;
+    gap: 23px;
+  }
+  .footer .footer-bg .footer-contacts-wrapper .footer-contacts-title {
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footer-links {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 24px;
+  }
+  .footer .footer-links .social-media-wrapper {
+    flex-direction: column;
+    gap: 21px;
+  }
 }
 @media (max-width: 576px) {
   .main-btn {
@@ -1339,6 +1360,38 @@ body {
   }
   .video-section .video-content {
     max-height: 250px;
+  }
+  .footer .footer-bg {
+    margin: 0px 16px 16px;
+  }
+  .footer .footer-bg .footer-contacts-wrapper {
+    padding: 24px 0px;
+  }
+  .footer .footer-bg .footer-contacts-wrapper .footer-contacts-title {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .footer .footer-bg .footer-contacts-wrapper .footer-contacts-item {
+    gap: 16px;
+  }
+  .footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .contact-img {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+  }
+  .footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .contact-number {
+    font-size: 24px;
+  }
+  .footer .footer-links .social-media-links-wrapper {
+    gap: 32px;
+  }
+  .footer .footer-links .social-media-link {
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+  }
+  .footer .footer-links .youtube-link {
+    width: 80px;
   }
 }
 @media (max-width: 380px) {
