@@ -771,11 +771,18 @@ body {
 .requirements-section .requirements-wrapper .requirements-text {
   width: 50%;
 }
+.requirements-section .requirements-wrapper .requirements-img {
+  width: 50%;
+}
 .requirements-section .requirements-wrapper .requirements-img > img {
   width: 100%;
 }
 .requirements-section .requirements-btn {
   margin-top: 40px;
+}
+.requirements-section .requirements-btn-mobile {
+  display: none;
+  margin: 20px auto 0px;
 }
 
 .video-section {
@@ -942,6 +949,9 @@ body {
   .review-section .review-section-row .review-slider .slick-next {
     top: 625px;
   }
+  .requirements-section .requirements-wrapper {
+    gap: 45px;
+  }
 }
 @media (max-width: 992px) {
   .header .header-wrapper {
@@ -1068,6 +1078,21 @@ body {
   }
   .review-section .review-section-row .review-text {
     width: 100%;
+  }
+  .requirements-section .requirements-wrapper {
+    flex-direction: column;
+  }
+  .requirements-section .requirements-wrapper .requirements-text {
+    width: 100%;
+  }
+  .requirements-section .requirements-wrapper .requirements-img {
+    width: 100%;
+  }
+  .requirements-section .requirements-btn {
+    display: none;
+  }
+  .requirements-section .requirements-btn-mobile {
+    display: block;
   }
 }
 @media (max-width: 576px) {
@@ -1223,10 +1248,22 @@ body {
     background-image: url(images/arrow-right-orange-svg.svg);
     background-size: 15%;
   }
+  .review-section {
+    text-align: center;
+  }
+  .review-section .review-section-row {
+    gap: 20px;
+  }
+  .review-section .review-section-row .review-title {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 16px;
+  }
   .review-section .review-section-row .review-slider {
     display: none;
   }
   .review-section .review-section-row .review-mobile-slider {
+    text-align: left;
     display: block;
     max-width: 100%;
   }
@@ -1250,6 +1287,24 @@ body {
   .review-section .review-section-row .review-mobile-slider .slick-next {
     left: 60%;
     transform: translateX(-50%);
+  }
+  .requirements-section {
+    text-align: center;
+  }
+  .requirements-section .requirements-wrapper {
+    gap: 16px;
+  }
+  .requirements-section .requirements-wrapper .requirements-subtitle {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  .requirements-section .requirements-wrapper .requirements-title {
+    font-size: 40px;
+    line-height: 52px;
+    margin: 16px 0px;
+  }
+  .requirements-section .requirements-wrapper .requirements-list {
+    text-align: left;
   }
 }
 @media (max-width: 380px) {

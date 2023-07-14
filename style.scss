@@ -568,6 +568,7 @@ body {
             width: 50%;
         }
         .requirements-img {
+            width: 50%;
             > img {
                 width: 100%;
             }
@@ -575,6 +576,10 @@ body {
     }
     .requirements-btn {
         margin-top: 40px;
+    }
+    .requirements-btn-mobile {
+        display: none;
+        margin: 20px auto 0px;
     }
 }
 .video-section {
@@ -738,6 +743,11 @@ body {
             }
         }
     }
+    .requirements-section {
+        .requirements-wrapper {
+            gap: 45px;
+        }
+    }
 }
 
 // --- Tablet ---
@@ -879,6 +889,23 @@ body {
             .review-text {
                 width: 100%;
             }
+        }
+    }
+    .requirements-section {
+        .requirements-wrapper {
+            flex-direction: column;
+            .requirements-text {
+                width: 100%;
+            }
+            .requirements-img {
+                width: 100%;
+            }
+        }
+        .requirements-btn {
+            display: none;
+        }
+        .requirements-btn-mobile {
+            display: block;
         }
     }
 }
@@ -1047,11 +1074,19 @@ body {
         }
     }
     .review-section {
+        text-align: center;
         .review-section-row {
+            gap: 20px;
+            .review-title {
+                font-size: 40px;
+                line-height: 52px;
+                margin-bottom: 16px;
+            }
             .review-slider {
                 display: none;
             }
             .review-mobile-slider {
+                text-align: left;
                 display: block;
                 max-width: 100%;
                 .review-mobile-slider-item:last-child {
@@ -1076,6 +1111,24 @@ body {
                     // right: 50%;
                     transform: translateX(-50%);
                 }
+            }
+        }
+    }
+    .requirements-section {
+        text-align: center;
+        .requirements-wrapper {
+            gap: 16px;
+            .requirements-subtitle {
+                font-size: 20px;
+                line-height: 36px;
+            }
+            .requirements-title {
+                font-size: 40px;
+                line-height: 52px;
+                margin: 16px 0px;
+            }
+            .requirements-list {
+                text-align: left;
             }
         }
     }
