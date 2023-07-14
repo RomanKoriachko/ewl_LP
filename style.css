@@ -177,9 +177,6 @@ body {
   font-weight: 700;
   line-height: 48px;
 }
-.main-btn:hover {
-  box-shadow: 4px 4px 40px 0px #35cbd5;
-}
 
 .header .header-wrapper {
   display: grid;
@@ -202,9 +199,6 @@ body {
 .header .header-wrapper .header-menu > div {
   transition: 0.3s all;
   cursor: pointer;
-}
-.header .header-wrapper .header-menu > div:hover {
-  color: #fbba00;
 }
 .header .header-wrapper .burger-menu-btn {
   display: none;
@@ -271,9 +265,6 @@ body {
   cursor: pointer;
   background: linear-gradient(115.1deg, #ffaa00 -17.37%, #ff5500 82.64%);
   border: none;
-}
-.introduce-section .introduce-section-text .introduce-section-btn:hover {
-  box-shadow: 4px 4px 40px 0px #ffaa00;
 }
 
 .about-section {
@@ -519,25 +510,15 @@ body {
   background-repeat: no-repeat;
   transition: 0.3s all;
 }
-.housing-section .housing-slider .slick-prev:hover,
-.housing-section .housing-slider .slick-next:hover {
-  border-color: #ff5500;
-}
 .housing-section .housing-slider .slick-prev {
   left: 300px;
   background-image: url(images/arrow-left.svg);
   background-position: 47% 50%;
 }
-.housing-section .housing-slider .slick-prev:hover {
-  background-image: url(images/arrow-left-orange-svg.svg);
-}
 .housing-section .housing-slider .slick-next {
   right: 300px;
   background-image: url(images/arrow-right.svg);
   background-position: 53% 50%;
-}
-.housing-section .housing-slider .slick-next:hover {
-  background-image: url(images/arrow-right-orange-svg.svg);
 }
 .housing-section .housing-mobile-slider {
   display: none;
@@ -679,27 +660,13 @@ body {
   border-radius: 50%;
   transition: 0.3s all;
 }
-.review-section .review-section-row .review-slider .slick-prev:hover,
-.review-section .review-section-row .review-slider .slick-next:hover,
-.review-section .review-section-row .review-mobile-slider .slick-prev:hover,
-.review-section .review-section-row .review-mobile-slider .slick-next:hover {
-  border-color: #ff5500;
-}
 .review-section .review-section-row .review-slider .slick-prev,
 .review-section .review-section-row .review-mobile-slider .slick-prev {
   left: 0px;
   background-image: url(images/review-arrow-left.svg);
 }
-.review-section .review-section-row .review-slider .slick-prev:hover,
-.review-section .review-section-row .review-mobile-slider .slick-prev:hover {
-  background-image: url(images/review-arrow-left-orange.svg);
-}
 .review-section .review-section-row .review-slider .slick-prev.slick-disabled,
 .review-section .review-section-row .review-mobile-slider .slick-prev.slick-disabled {
-  background-image: url(images/review-arrow-left.svg);
-}
-.review-section .review-section-row .review-slider .slick-prev.slick-disabled:hover,
-.review-section .review-section-row .review-mobile-slider .slick-prev.slick-disabled:hover {
   background-image: url(images/review-arrow-left.svg);
 }
 .review-section .review-section-row .review-slider .slick-next,
@@ -708,25 +675,13 @@ body {
   left: 70px;
   background-image: url(images/review-arrow-right.svg);
 }
-.review-section .review-section-row .review-slider .slick-next:hover,
-.review-section .review-section-row .review-mobile-slider .slick-next:hover {
-  background-image: url(images/review-arrow-right-orange.svg);
-}
 .review-section .review-section-row .review-slider .slick-next.slick-disabled,
 .review-section .review-section-row .review-mobile-slider .slick-next.slick-disabled {
-  background-image: url(images/review-arrow-right.svg);
-}
-.review-section .review-section-row .review-slider .slick-next.slick-disabled:hover,
-.review-section .review-section-row .review-mobile-slider .slick-next.slick-disabled:hover {
   background-image: url(images/review-arrow-right.svg);
 }
 .review-section .review-section-row .review-slider .slick-disabled,
 .review-section .review-section-row .review-mobile-slider .slick-disabled {
   opacity: 0.3;
-}
-.review-section .review-section-row .review-slider .slick-disabled:hover,
-.review-section .review-section-row .review-mobile-slider .slick-disabled:hover {
-  border-color: black;
 }
 .review-section .review-section-row .review-slider .slick-dots,
 .review-section .review-section-row .review-mobile-slider .slick-dots {
@@ -912,6 +867,59 @@ body {
   line-height: 20px;
 }
 
+@media (hover: hover) {
+  .main-btn:hover {
+    box-shadow: 4px 4px 40px 0px #35cbd5;
+  }
+  .header .header-wrapper .header-menu > div:hover {
+    color: #fbba00;
+  }
+  .introduce-section .introduce-section-text .introduce-section-btn:hover {
+    box-shadow: 4px 4px 40px 0px #ffaa00;
+  }
+  .housing-section .housing-slider .slick-prev:hover,
+  .housing-section .housing-slider .slick-next:hover {
+    border-color: #ff5500;
+  }
+  .housing-section .housing-slider .slick-prev:hover {
+    background-image: url(images/arrow-left-orange-svg.svg);
+  }
+  .housing-section .housing-slider .slick-next:hover {
+    background-image: url(images/arrow-right-orange-svg.svg);
+  }
+  .review-section .review-slider .slick-prev:hover,
+  .review-section .review-slider .slick-next:hover,
+  .review-section .review-mobile-slider .slick-prev:hover,
+  .review-section .review-mobile-slider .slick-next:hover {
+    border-color: #ff5500;
+  }
+  .review-section .review-slider .slick-prev:hover,
+  .review-section .review-mobile-slider .slick-prev:hover {
+    background-image: url(images/review-arrow-left-orange.svg);
+  }
+  .review-section .review-slider .slick-prev.slick-disabled:hover,
+  .review-section .review-mobile-slider .slick-prev.slick-disabled:hover {
+    background-image: url(images/review-arrow-left.svg);
+  }
+  .review-section .review-slider .slick-next:hover,
+  .review-section .review-mobile-slider .slick-next:hover {
+    background-image: url(images/review-arrow-right-orange.svg);
+  }
+  .review-section .review-slider .slick-next.slick-disabled:hover,
+  .review-section .review-mobile-slider .slick-next.slick-disabled:hover {
+    background-image: url(images/review-arrow-right.svg);
+  }
+  .review-section .review-slider .slick-disabled:hover,
+  .review-section .review-mobile-slider .slick-disabled:hover {
+    border-color: black;
+  }
+  .footer .footer-links .social-media-link {
+    transition: 0.3s all;
+  }
+  .footer .footer-links .social-media-link:hover {
+    transform: scale(110%);
+  }
+}
 @media (max-width: 1200px) {
   .header .header-wrapper {
     justify-items: end;
@@ -1099,8 +1107,32 @@ body {
   .conditions-section .conditions-row-item-2 {
     flex-direction: column-reverse;
   }
+  .housing-section .housing-slider .slick-prev,
+  .housing-section .housing-slider .slick-next {
+    transition: 0.2s all;
+  }
+  .housing-section .housing-slider .slick-prev:active,
+  .housing-section .housing-slider .slick-next:active {
+    border-color: #ffaa00;
+  }
+  .housing-section .housing-slider .slick-prev:active {
+    background-image: url(images/arrow-left-orange-svg.svg);
+  }
+  .housing-section .housing-slider .slick-next:active {
+    background-image: url(images/arrow-right-orange-svg.svg);
+  }
   .review-section .review-section-row .review-text {
     width: 100%;
+  }
+  .review-section .review-section-row .review-slider .slick-prev:active,
+  .review-section .review-section-row .review-slider .slick-next:active {
+    border-color: #ffaa00;
+  }
+  .review-section .review-section-row .review-slider .slick-prev:active {
+    background-image: url(images/review-arrow-left-orange.svg);
+  }
+  .review-section .review-section-row .review-slider .slick-next:active {
+    background-image: url(images/review-arrow-right-orange.svg);
   }
   .requirements-section .requirements-wrapper {
     flex-direction: column;
@@ -1336,13 +1368,23 @@ body {
   .review-section .review-section-row .review-mobile-slider .slick-next {
     top: 102%;
   }
+  .review-section .review-section-row .review-mobile-slider .slick-prev:active,
+  .review-section .review-section-row .review-mobile-slider .slick-next:active {
+    border-color: #ffaa00;
+  }
   .review-section .review-section-row .review-mobile-slider .slick-prev {
     left: 40%;
     transform: translateX(-50%);
   }
+  .review-section .review-section-row .review-mobile-slider .slick-prev:active {
+    background-image: url(images/review-arrow-left-orange.svg);
+  }
   .review-section .review-section-row .review-mobile-slider .slick-next {
     left: 60%;
     transform: translateX(-50%);
+  }
+  .review-section .review-section-row .review-mobile-slider .slick-next:active {
+    background-image: url(images/review-arrow-right-orange.svg);
   }
   .requirements-section {
     padding-top: 40px;

@@ -53,9 +53,6 @@ body {
 }
 .main-btn {
     @include mainButton();
-    &:hover {
-        box-shadow: 4px 4px 40px 0px #35cbd5;
-    }
 }
 
 // --- Desktop ---
@@ -80,17 +77,12 @@ body {
             > div {
                 transition: 0.3s all;
                 cursor: pointer;
-                &:hover {
-                    color: #fbba00;
-                }
             }
         }
         .burger-menu-btn {
             display: none;
         }
         .burger-menu {
-            // visibility: hidden;
-            // opacity: 0;
             display: none;
         }
     }
@@ -151,9 +143,6 @@ body {
                 #ff5500 82.64%
             );
             border: none;
-            &:hover {
-                box-shadow: 4px 4px 40px 0px #ffaa00;
-            }
         }
     }
 }
@@ -350,25 +339,16 @@ body {
             border: 2px solid white;
             background-repeat: no-repeat;
             transition: 0.3s all;
-            &:hover {
-                border-color: #ff5500;
-            }
         }
         .slick-prev {
             left: 300px;
             background-image: url(images/arrow-left.svg);
             background-position: 47% 50%;
-            &:hover {
-                background-image: url(images/arrow-left-orange-svg.svg);
-            }
         }
         .slick-next {
             right: 300px;
             background-image: url(images/arrow-right.svg);
             background-position: 53% 50%;
-            &:hover {
-                background-image: url(images/arrow-right-orange-svg.svg);
-            }
         }
     }
     .housing-mobile-slider {
@@ -497,42 +477,24 @@ body {
                 border: 1px solid black;
                 border-radius: 50%;
                 transition: 0.3s all;
-                &:hover {
-                    border-color: #ff5500;
-                }
             }
             .slick-prev {
                 left: 0px;
                 background-image: url(images/review-arrow-left.svg);
-                &:hover {
-                    background-image: url(images/review-arrow-left-orange.svg);
-                }
             }
             .slick-prev.slick-disabled {
                 background-image: url(images/review-arrow-left.svg);
-                &:hover {
-                    background-image: url(images/review-arrow-left.svg);
-                }
             }
             .slick-next {
                 right: 0;
                 left: 70px;
                 background-image: url(images/review-arrow-right.svg);
-                &:hover {
-                    background-image: url(images/review-arrow-right-orange.svg);
-                }
             }
             .slick-next.slick-disabled {
                 background-image: url(images/review-arrow-right.svg);
-                &:hover {
-                    background-image: url(images/review-arrow-right.svg);
-                }
             }
             .slick-disabled {
                 opacity: 0.3;
-                &:hover {
-                    border-color: black;
-                }
             }
             .slick-dots {
                 right: 200px;
@@ -694,14 +656,102 @@ body {
 
 // --- disable hover on touch devices ---
 
-// @media (hover: hover) {
-//     .main-btn {
-//         @include mainButton();
-//         &:hover {
-//             box-shadow: 4px 4px 40px 0px #35cbd5;
-//         }
-//     }
-// }
+@media (hover: hover) {
+    .main-btn {
+        &:hover {
+            box-shadow: 4px 4px 40px 0px #35cbd5;
+        }
+    }
+
+    .header {
+        .header-wrapper {
+            .header-menu {
+                > div {
+                    &:hover {
+                        color: #fbba00;
+                    }
+                }
+            }
+        }
+    }
+
+    .introduce-section {
+        .introduce-section-text {
+            .introduce-section-btn {
+                &:hover {
+                    box-shadow: 4px 4px 40px 0px #ffaa00;
+                }
+            }
+        }
+    }
+    .housing-section {
+        .housing-slider {
+            .slick-prev,
+            .slick-next {
+                &:hover {
+                    border-color: #ff5500;
+                }
+            }
+            .slick-prev {
+                &:hover {
+                    background-image: url(images/arrow-left-orange-svg.svg);
+                }
+            }
+            .slick-next {
+                &:hover {
+                    background-image: url(images/arrow-right-orange-svg.svg);
+                }
+            }
+        }
+    }
+    .review-section {
+        .review-slider,
+        .review-mobile-slider {
+            .slick-prev,
+            .slick-next {
+                &:hover {
+                    border-color: #ff5500;
+                }
+            }
+            .slick-prev {
+                &:hover {
+                    background-image: url(images/review-arrow-left-orange.svg);
+                }
+            }
+            .slick-prev.slick-disabled {
+                &:hover {
+                    background-image: url(images/review-arrow-left.svg);
+                }
+            }
+            .slick-next {
+                &:hover {
+                    background-image: url(images/review-arrow-right-orange.svg);
+                }
+            }
+            .slick-next.slick-disabled {
+                &:hover {
+                    background-image: url(images/review-arrow-right.svg);
+                }
+            }
+            .slick-disabled {
+                &:hover {
+                    border-color: black;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .footer-links {
+            .social-media-link {
+                transition: 0.3s all;
+                &:hover {
+                    transform: scale(110%);
+                }
+            }
+        }
+    }
+}
 
 // --- Adaptive ---
 
@@ -807,8 +857,6 @@ body {
                 height: 30px;
             }
             .burger-menu {
-                // visibility: visible;
-                // opacity: 1;
                 display: block;
                 position: fixed;
                 z-index: 1000;
@@ -922,10 +970,49 @@ body {
             flex-direction: column-reverse;
         }
     }
+    .housing-section {
+        .housing-slider {
+            .slick-prev,
+            .slick-next {
+                transition: 0.2s all;
+                &:active {
+                    border-color: #ffaa00;
+                }
+            }
+            .slick-prev {
+                &:active {
+                    background-image: url(images/arrow-left-orange-svg.svg);
+                }
+            }
+            .slick-next {
+                &:active {
+                    background-image: url(images/arrow-right-orange-svg.svg);
+                }
+            }
+        }
+    }
     .review-section {
         .review-section-row {
             .review-text {
                 width: 100%;
+            }
+            .review-slider {
+                .slick-prev,
+                .slick-next {
+                    &:active {
+                        border-color: #ffaa00;
+                    }
+                }
+                .slick-prev {
+                    &:active {
+                        background-image: url(images/review-arrow-left-orange.svg);
+                    }
+                }
+                .slick-next {
+                    &:active {
+                        background-image: url(images/review-arrow-right-orange.svg);
+                    }
+                }
             }
         }
     }
@@ -1179,15 +1266,23 @@ body {
                 .slick-prev,
                 .slick-next {
                     top: 102%;
+                    &:active {
+                        border-color: #ffaa00;
+                    }
                 }
                 .slick-prev {
                     left: 40%;
                     transform: translateX(-50%);
+                    &:active {
+                        background-image: url(images/review-arrow-left-orange.svg);
+                    }
                 }
                 .slick-next {
                     left: 60%;
-                    // right: 50%;
                     transform: translateX(-50%);
+                    &:active {
+                        background-image: url(images/review-arrow-right-orange.svg);
+                    }
                 }
             }
         }
