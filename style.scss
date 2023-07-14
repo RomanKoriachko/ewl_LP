@@ -588,8 +588,8 @@ body {
     .video-bg {
         background-image: url(images/video-bg-1.png), url(images/video-bg-2.png);
         background-repeat: no-repeat, no-repeat;
-        background-position: 10% 0%, 100% 150%;
-        padding-bottom: 250px;
+        background-position: 10% 0%, 100% 230%;
+        padding-bottom: 110px;
     }
     .video-title {
         @include fonts.h2();
@@ -746,6 +746,17 @@ body {
     .requirements-section {
         .requirements-wrapper {
             gap: 45px;
+        }
+    }
+    .video-section {
+        .video-bg {
+            background-position: 0% 11%, 100% 0%;
+        }
+        .video-text {
+            width: 75%;
+        }
+        .video-content {
+            height: 460px;
         }
     }
 }
@@ -906,6 +917,24 @@ body {
         }
         .requirements-btn-mobile {
             display: block;
+        }
+    }
+    .video-section {
+        .video-bg {
+            background-position: 0% 10%, 100% 100%;
+            background-size: 80%, 70%;
+        }
+        .video-title {
+            font-size: 40px;
+            line-height: 60px;
+        }
+        .video-text {
+            width: 100%;
+            margin: 16px 0px;
+        }
+        .video-content {
+            height: 380px;
+            width: 100%;
         }
     }
 }
@@ -1115,6 +1144,8 @@ body {
         }
     }
     .requirements-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
         text-align: center;
         .requirements-wrapper {
             gap: 16px;
@@ -1130,6 +1161,15 @@ body {
             .requirements-list {
                 text-align: left;
             }
+        }
+    }
+    .video-section {
+        .video-bg {
+            padding-bottom: 25px;
+            background-position: 0% 70%, 180% 130%;
+        }
+        .video-content {
+            max-height: 250px;
         }
     }
 }
@@ -1150,6 +1190,11 @@ body {
     .conditions-section {
         .conditions-section-bg {
             background-position: 0% -2%, 130% 55%;
+        }
+    }
+    .video-section {
+        .video-content {
+            max-height: 200px;
         }
     }
 }
