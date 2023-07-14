@@ -1,10 +1,23 @@
+// --- Burger menu ---
+
+const openBurgerBtn = document.querySelector(".burger-menu-btn");
+const closeBurgerBtn = document.querySelector(".burger-menu-close-btn");
+const burgerMenu = document.querySelector(".burger-menu");
+
+openBurgerBtn.addEventListener("click", () => {
+    burgerMenu.classList.add("active");
+});
+closeBurgerBtn.addEventListener("click", () => {
+    burgerMenu.classList.remove("active");
+});
+
 // --- Navigation ---
 
-const aboutBtn = document.querySelector("#about-btn");
-const vacancyBtn = document.querySelector("#vacancies-btn");
-const conditionsBtn = document.querySelector("#conditions-btn");
-const reviewsbtn = document.querySelector("#reviews-btn");
-const contactsBtn = document.querySelector("#contacts-btn");
+const aboutBtn = document.querySelectorAll(".menu-about-btn");
+const vacancyBtn = document.querySelectorAll(".menu-vacancies-btn");
+const conditionsBtn = document.querySelectorAll(".menu-conditions-btn");
+const reviewsbtn = document.querySelectorAll(".menu-reviews-btn");
+const contactsBtn = document.querySelectorAll(".menu-contacts-btn");
 
 const aboutSection = document.querySelector(".about-section");
 const conditionsSection = document.querySelector(".conditions-section");
@@ -15,46 +28,64 @@ const buttons = document.querySelectorAll(".main-btn");
 const introduceBtn = document.querySelector(".introduce-section-btn");
 const contacts = document.querySelector(".footer");
 
-aboutBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top:
-            aboutSection.getBoundingClientRect().top + window.pageYOffset - 100,
-        behavior: "smooth",
+for (let i = 0; i < aboutBtn.length; i++) {
+    aboutBtn[i].addEventListener("click", () => {
+        window.scrollTo({
+            top:
+                aboutSection.getBoundingClientRect().top +
+                window.pageYOffset -
+                100,
+            behavior: "smooth",
+        });
+        burgerMenu.classList.remove("active");
     });
-});
-conditionsBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top:
-            conditionsSection.getBoundingClientRect().top +
-            window.pageYOffset -
-            100,
-        behavior: "smooth",
+}
+for (let i = 0; i < conditionsBtn.length; i++) {
+    conditionsBtn[i].addEventListener("click", () => {
+        window.scrollTo({
+            top:
+                conditionsSection.getBoundingClientRect().top +
+                window.pageYOffset -
+                100,
+            behavior: "smooth",
+        });
+        burgerMenu.classList.remove("active");
     });
-});
-reviewsbtn.addEventListener("click", () => {
-    window.scrollTo({
-        top:
-            reviewSection.getBoundingClientRect().top +
-            window.pageYOffset -
-            100,
-        behavior: "smooth",
+}
+for (let i = 0; i < reviewsbtn.length; i++) {
+    reviewsbtn[i].addEventListener("click", () => {
+        window.scrollTo({
+            top:
+                reviewSection.getBoundingClientRect().top +
+                window.pageYOffset -
+                100,
+            behavior: "smooth",
+        });
+        burgerMenu.classList.remove("active");
     });
-});
-contactsBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top: contacts.getBoundingClientRect().top + window.pageYOffset - 100,
-        behavior: "smooth",
+}
+for (let i = 0; i < contactsBtn.length; i++) {
+    contactsBtn[i].addEventListener("click", () => {
+        window.scrollTo({
+            top:
+                contacts.getBoundingClientRect().top + window.pageYOffset - 100,
+            behavior: "smooth",
+        });
+        burgerMenu.classList.remove("active");
     });
-});
-vacancyBtn.addEventListener("click", () => {
-    window.scrollTo({
-        top:
-            requirementsSection.getBoundingClientRect().top +
-            window.pageYOffset -
-            100,
-        behavior: "smooth",
+}
+for (let i = 0; i < vacancyBtn.length; i++) {
+    vacancyBtn[i].addEventListener("click", () => {
+        window.scrollTo({
+            top:
+                requirementsSection.getBoundingClientRect().top +
+                window.pageYOffset -
+                100,
+            behavior: "smooth",
+        });
+        burgerMenu.classList.remove("active");
     });
-});
+}
 
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", () => {
@@ -140,21 +171,6 @@ $(document).ready(function () {
         slidesToScroll: 1,
         adaptiveHeight: true,
     });
-});
-
-// ---
-
-// --- Burger menu ---
-
-const openBurgerBtn = document.querySelector(".burger-menu-btn");
-const closeBurgerBtn = document.querySelector(".burger-menu-close-btn");
-const burgerMenu = document.querySelector(".burger-menu");
-
-openBurgerBtn.addEventListener("click", () => {
-    burgerMenu.classList.add("active");
-});
-closeBurgerBtn.addEventListener("click", () => {
-    burgerMenu.classList.remove("active");
 });
 
 // ---

@@ -145,36 +145,6 @@ body {
   display: flex;
 }
 
-.header .header-wrapper {
-  display: grid;
-  grid-template-columns: 170px 1fr;
-  align-items: center;
-  padding: 20px 0px;
-}
-.header .header-wrapper .header-logo {
-  width: 170px;
-  height: 60px;
-}
-.header .header-wrapper .header-menu {
-  justify-self: center;
-  gap: 100px;
-  font-family: "Lexend", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 36px;
-}
-.header .header-wrapper .header-menu > div {
-  transition: 0.3s all;
-  cursor: pointer;
-}
-.header .header-wrapper .header-menu > div:hover {
-  color: #fbba00;
-}
-.header .header-wrapper .burger-menu-btn,
-.header .header-wrapper .burger-menu {
-  display: none;
-}
-
 .slider .slick-dots {
   bottom: -40px;
 }
@@ -209,6 +179,38 @@ body {
 }
 .main-btn:hover {
   box-shadow: 4px 4px 40px 0px #35cbd5;
+}
+
+.header .header-wrapper {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  align-items: center;
+  padding: 20px 0px;
+}
+.header .header-wrapper .header-logo {
+  width: 170px;
+  height: 60px;
+}
+.header .header-wrapper .header-menu {
+  justify-self: center;
+  gap: 100px;
+  font-family: "Lexend", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+}
+.header .header-wrapper .header-menu > div {
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.header .header-wrapper .header-menu > div:hover {
+  color: #fbba00;
+}
+.header .header-wrapper .burger-menu-btn {
+  display: none;
+}
+.header .header-wrapper .burger-menu {
+  display: none;
 }
 
 .introduce-section {
@@ -967,6 +969,13 @@ body {
   }
 }
 @media (max-width: 992px) {
+  .header {
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+  }
   .header .header-wrapper {
     grid-template-columns: 100%;
     position: relative;
@@ -1000,6 +1009,7 @@ body {
     background-color: white;
     padding: 20px 30px;
     transition: 0.4s all;
+    overflow-y: auto;
   }
   .header .header-wrapper .burger-menu .burger-menu-row {
     align-items: center;
@@ -1026,10 +1036,7 @@ body {
     line-height: 36px;
   }
   .header .header-wrapper .burger-menu .burger-menu-footer {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 80px;
     width: 100%;
     text-align: center;
   }
@@ -1058,6 +1065,9 @@ body {
   }
   .header .header-wrapper .active {
     right: 0px;
+  }
+  .introduce-section {
+    margin-top: 100px;
   }
   .introduce-section .introduce-section-text {
     width: 90%;

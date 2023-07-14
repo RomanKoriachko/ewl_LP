@@ -31,38 +31,6 @@ body {
 
 // --- Global parameters ---
 
-.header {
-    .header-wrapper {
-        display: grid;
-        grid-template-columns: 170px 1fr;
-        align-items: center;
-        padding: 20px 0px;
-        .header-logo {
-            width: 170px;
-            height: 60px;
-        }
-        .header-menu {
-            justify-self: center;
-            gap: 100px;
-            font-family: "Lexend", sans-serif;
-            font-size: 20px;
-            font-weight: 600;
-            line-height: 36px;
-            > div {
-                transition: 0.3s all;
-                cursor: pointer;
-                &:hover {
-                    color: #fbba00;
-                }
-            }
-        }
-        .burger-menu-btn,
-        .burger-menu {
-            display: none;
-        }
-    }
-}
-
 .slider {
     .slick-dots {
         bottom: -40px;
@@ -90,10 +58,43 @@ body {
     }
 }
 
-// ---
-
-// --- Sections ---
 // --- Desktop ---
+
+.header {
+    .header-wrapper {
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        align-items: center;
+        padding: 20px 0px;
+        .header-logo {
+            width: 170px;
+            height: 60px;
+        }
+        .header-menu {
+            justify-self: center;
+            gap: 100px;
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 36px;
+            > div {
+                transition: 0.3s all;
+                cursor: pointer;
+                &:hover {
+                    color: #fbba00;
+                }
+            }
+        }
+        .burger-menu-btn {
+            display: none;
+        }
+        .burger-menu {
+            // visibility: hidden;
+            // opacity: 0;
+            display: none;
+        }
+    }
+}
 
 .introduce-section {
     position: relative;
@@ -691,6 +692,17 @@ body {
     }
 }
 
+// --- disable hover on touch devices ---
+
+// @media (hover: hover) {
+//     .main-btn {
+//         @include mainButton();
+//         &:hover {
+//             box-shadow: 4px 4px 40px 0px #35cbd5;
+//         }
+//     }
+// }
+
 // --- Adaptive ---
 
 // --- Laptop ---
@@ -768,6 +780,11 @@ body {
 // --- Tablet ---
 @media (max-width: 992px) {
     .header {
+        position: fixed;
+        background-color: white;
+        top: 0px;
+        z-index: 999;
+        width: 100%;
         .header-wrapper {
             grid-template-columns: 100%;
             position: relative;
@@ -790,6 +807,8 @@ body {
                 height: 30px;
             }
             .burger-menu {
+                // visibility: visible;
+                // opacity: 1;
                 display: block;
                 position: fixed;
                 z-index: 1000;
@@ -800,6 +819,7 @@ body {
                 background-color: white;
                 padding: 20px 30px;
                 transition: 0.4s all;
+                overflow-y: auto;
                 .burger-menu-row {
                     align-items: center;
                     justify-content: space-between;
@@ -825,10 +845,11 @@ body {
                     line-height: 36px;
                 }
                 .burger-menu-footer {
-                    position: absolute;
-                    bottom: 15px;
-                    left: 50%;
-                    transform: translateX(-50%);
+                    // position: absolute;
+                    // bottom: 5%;
+                    // left: 50%;
+                    // transform: translateX(-50%);
+                    margin-top: 80px;
                     width: 100%;
                     text-align: center;
                     .burger-menu-number-wrapper {
@@ -863,6 +884,7 @@ body {
     }
 
     .introduce-section {
+        margin-top: 100px;
         .introduce-section-text {
             width: 90%;
         }
