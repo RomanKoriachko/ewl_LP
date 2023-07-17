@@ -1310,6 +1310,12 @@ body.lock {
     font-weight: 700;
     line-height: 68px;
   }
+  .about-section {
+    padding: 40px 0px;
+  }
+  .about-section .about-section-bg {
+    background-position: 30% 100%, 35% 115%;
+  }
   .conditions-section .conditions-section-bg {
     background-position: 0% -2%, 130% 55%;
   }
