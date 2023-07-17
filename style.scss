@@ -19,6 +19,9 @@
 body {
     color: #54504c;
 }
+body.lock {
+    overflow: hidden;
+}
 
 .container {
     max-width: 1600px;
@@ -227,6 +230,7 @@ body {
 .conditions-section {
     padding: 20px 0px;
     text-align: center;
+    overflow-x: hidden;
     .conditions-section-bg {
         background-image: url(images/conditions-bg.png),
             url(images/conditions-bg.png);
@@ -365,6 +369,7 @@ body {
 .review-section {
     padding-top: 40px;
     padding-bottom: 60px;
+    overflow-x: hidden;
     .review-section-row {
         position: relative;
         gap: 48px;

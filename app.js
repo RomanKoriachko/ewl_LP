@@ -4,11 +4,21 @@ const openBurgerBtn = document.querySelector(".burger-menu-btn");
 const closeBurgerBtn = document.querySelector(".burger-menu-close-btn");
 const burgerMenu = document.querySelector(".burger-menu");
 
-openBurgerBtn.addEventListener("click", () => {
+const openBurgerMenu = () => {
     burgerMenu.classList.add("active");
+    document.body.classList.add("lock");
+};
+
+const closeBurgerMenu = () => {
+    burgerMenu.classList.remove("active");
+    document.body.classList.remove("lock");
+};
+
+openBurgerBtn.addEventListener("click", () => {
+    openBurgerMenu();
 });
 closeBurgerBtn.addEventListener("click", () => {
-    burgerMenu.classList.remove("active");
+    closeBurgerMenu();
 });
 
 // --- Navigation ---
@@ -37,7 +47,7 @@ for (let i = 0; i < aboutBtn.length; i++) {
                 100,
             behavior: "smooth",
         });
-        burgerMenu.classList.remove("active");
+        closeBurgerMenu();
     });
 }
 for (let i = 0; i < conditionsBtn.length; i++) {
@@ -49,7 +59,7 @@ for (let i = 0; i < conditionsBtn.length; i++) {
                 100,
             behavior: "smooth",
         });
-        burgerMenu.classList.remove("active");
+        closeBurgerMenu();
     });
 }
 for (let i = 0; i < reviewsbtn.length; i++) {
@@ -61,7 +71,7 @@ for (let i = 0; i < reviewsbtn.length; i++) {
                 100,
             behavior: "smooth",
         });
-        burgerMenu.classList.remove("active");
+        closeBurgerMenu();
     });
 }
 for (let i = 0; i < contactsBtn.length; i++) {
@@ -71,7 +81,7 @@ for (let i = 0; i < contactsBtn.length; i++) {
                 contacts.getBoundingClientRect().top + window.pageYOffset - 100,
             behavior: "smooth",
         });
-        burgerMenu.classList.remove("active");
+        closeBurgerMenu();
     });
 }
 for (let i = 0; i < vacancyBtn.length; i++) {
@@ -83,7 +93,7 @@ for (let i = 0; i < vacancyBtn.length; i++) {
                 100,
             behavior: "smooth",
         });
-        burgerMenu.classList.remove("active");
+        closeBurgerMenu();
     });
 }
 
@@ -174,3 +184,5 @@ $(document).ready(function () {
 });
 
 // ---
+
+AOS.init();
