@@ -68,16 +68,15 @@ body.lock {
     width: 100%;
     .header-wrapper {
         display: grid;
-        grid-template-columns: 170px 1fr;
+        grid-template-columns: 270px 1fr;
         align-items: center;
         padding: 20px 0px;
         .header-logo {
-            width: 170px;
             height: 60px;
         }
         .header-menu {
             justify-self: center;
-            gap: 100px;
+            gap: 90px;
             font-family: "Lexend", sans-serif;
             font-size: 20px;
             font-weight: 600;
@@ -282,6 +281,9 @@ body.lock {
         .conditions-text-list {
             @include fonts.t6();
             margin-left: 15px;
+            span {
+                font-size: 25px;
+            }
         }
     }
     .conditions-row-item-1 {
@@ -836,7 +838,7 @@ body.lock {
         .header-wrapper {
             justify-items: end;
             .header-menu {
-                gap: 50px;
+                gap: 45px;
             }
         }
     }
@@ -948,9 +950,9 @@ body.lock {
                 top: 0px;
                 right: -110%;
                 height: 100vh;
-                width: 80%;
+                width: 85%;
                 background-color: white;
-                padding: 20px 30px;
+                padding: 20px;
                 transition: 0.4s all;
                 overflow-y: auto;
                 .burger-menu-row {
@@ -959,14 +961,14 @@ body.lock {
                     margin-bottom: 70px;
                 }
                 .burger-menu-logo {
-                    height: 60px;
-                    width: 170px;
+                    height: 50px;
                 }
                 .burger-menu-close-btn {
                     background-image: url(images/close-img.svg);
                     background-position: center;
                     background-repeat: no-repeat;
                     width: 24px;
+                    min-width: 24px;
                     height: 24px;
                 }
                 .burger-menu-item {
@@ -1173,6 +1175,15 @@ body.lock {
         width: 100%;
         font-size: 24px;
         line-height: 36px;
+    }
+
+    .header {
+        .header-wrapper {
+            justify-items: end;
+            .header-logo {
+                height: 50px;
+            }
+        }
     }
 
     .introduce-section {

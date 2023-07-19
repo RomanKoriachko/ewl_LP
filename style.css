@@ -191,17 +191,16 @@ body.lock {
 }
 .header .header-wrapper {
   display: grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns: 270px 1fr;
   align-items: center;
   padding: 20px 0px;
 }
 .header .header-wrapper .header-logo {
-  width: 170px;
   height: 60px;
 }
 .header .header-wrapper .header-menu {
   justify-self: center;
-  gap: 100px;
+  gap: 90px;
   font-family: "Lexend", sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -443,6 +442,9 @@ body.lock {
   font-weight: 400;
   line-height: 29px;
   margin-left: 15px;
+}
+.conditions-section .conditions-row-item .conditions-text-list span {
+  font-size: 25px;
 }
 .conditions-section .conditions-row-item-1 {
   margin-bottom: 87px;
@@ -830,7 +832,7 @@ body.lock {
     justify-items: end;
   }
   .header .header-wrapper .header-menu {
-    gap: 50px;
+    gap: 45px;
   }
   .introduce-section .introduce-section-video {
     height: 100%;
@@ -913,9 +915,9 @@ body.lock {
     top: 0px;
     right: -110%;
     height: 100vh;
-    width: 80%;
+    width: 85%;
     background-color: white;
-    padding: 20px 30px;
+    padding: 20px;
     transition: 0.4s all;
     overflow-y: auto;
   }
@@ -925,14 +927,14 @@ body.lock {
     margin-bottom: 70px;
   }
   .header .header-wrapper .burger-menu .burger-menu-logo {
-    height: 60px;
-    width: 170px;
+    height: 50px;
   }
   .header .header-wrapper .burger-menu .burger-menu-close-btn {
     background-image: url(images/close-img.svg);
     background-position: center;
     background-repeat: no-repeat;
     width: 24px;
+    min-width: 24px;
     height: 24px;
   }
   .header .header-wrapper .burger-menu .burger-menu-item {
@@ -1083,6 +1085,12 @@ body.lock {
     width: 100%;
     font-size: 24px;
     line-height: 36px;
+  }
+  .header .header-wrapper {
+    justify-items: end;
+  }
+  .header .header-wrapper .header-logo {
+    height: 50px;
   }
   .introduce-section .introduce-section-text-wrapper .introduce-section-text {
     text-align: center;
