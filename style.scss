@@ -656,6 +656,7 @@ body.lock {
             padding: 100px 0px;
             justify-content: space-evenly;
             align-items: center;
+            gap: 10px;
             .footer-contacts-title {
                 @include fonts.h1();
                 font-size: 48px;
@@ -677,9 +678,15 @@ body.lock {
                 .viber-img {
                     background-image: url(images/viber-img.svg);
                 }
+                .mail-img {
+                    background-image: url(images/mail2-img.svg);
+                }
                 .contact-number {
                     @include fonts.h3();
                     font-weight: 500;
+                }
+                .mail-number {
+                    font-size: 36px;
                 }
             }
         }
@@ -720,6 +727,10 @@ body.lock {
             height: 80px;
             width: 80px;
             background-image: url(images/youtube.svg);
+        }
+        .viber-link {
+            background-image: url(images/viber-img2.svg);
+            background-size: 100%;
         }
         .copyright {
             // justify-self: center;
@@ -1150,6 +1161,11 @@ body.lock {
             .footer-contacts-wrapper {
                 flex-direction: column;
                 gap: 23px;
+                .footer-contacts-item {
+                    .mail-number {
+                        font-size: 30px;
+                    }
+                }
                 .footer-contacts-title {
                     width: 100%;
                     text-align: center;
@@ -1440,6 +1456,10 @@ body.lock {
                     }
                     .contact-number {
                         font-size: 24px;
+                    }
+                    .mail-number {
+                        font-size: 16px;
+                        letter-spacing: -1px;
                     }
                 }
             }

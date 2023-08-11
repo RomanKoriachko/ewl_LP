@@ -718,6 +718,7 @@ body.lock {
   padding: 100px 0px;
   justify-content: space-evenly;
   align-items: center;
+  gap: 10px;
 }
 .footer .footer-bg .footer-contacts-wrapper .footer-contacts-title {
   font-family: "Roboto Slab", serif;
@@ -744,6 +745,9 @@ body.lock {
 .footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .viber-img {
   background-image: url(images/viber-img.svg);
 }
+.footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .mail-img {
+  background-image: url(images/mail2-img.svg);
+}
 .footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .contact-number {
   font-family: "Inter", sans-serif;
   font-size: 40px;
@@ -751,6 +755,9 @@ body.lock {
   line-height: 90px;
   letter-spacing: -3px;
   font-weight: 500;
+}
+.footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .mail-number {
+  font-size: 36px;
 }
 .footer .footer-links {
   display: grid;
@@ -792,6 +799,10 @@ body.lock {
   height: 80px;
   width: 80px;
   background-image: url(images/youtube.svg);
+}
+.footer .footer-links .viber-link {
+  background-image: url(images/viber-img2.svg);
+  background-size: 100%;
 }
 .footer .footer-links .copyright {
   font-family: "Poppins", sans-serif;
@@ -1065,6 +1076,9 @@ body.lock {
     flex-direction: column;
     gap: 23px;
   }
+  .footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .mail-number {
+    font-size: 30px;
+  }
   .footer .footer-bg .footer-contacts-wrapper .footer-contacts-title {
     width: 100%;
     text-align: center;
@@ -1299,6 +1313,10 @@ body.lock {
   }
   .footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .contact-number {
     font-size: 24px;
+  }
+  .footer .footer-bg .footer-contacts-wrapper .footer-contacts-item .mail-number {
+    font-size: 16px;
+    letter-spacing: -1px;
   }
   .footer .footer-links .social-media-links-wrapper {
     gap: 32px;
